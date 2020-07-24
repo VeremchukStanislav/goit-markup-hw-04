@@ -372,20 +372,23 @@ p {
   margin-right: 30px;
 }
 .clients-list-item-link {
-  background-color: var(--third-color-text);
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   width: 170px;
   height: 90px;
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--third-color-text);
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients-svg-item {
+  width: 44px;
+  height: 49px;
 }
 
 /*Footer*/
