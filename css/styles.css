@@ -383,10 +383,11 @@ p {
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
   background-color: var(--third-color-text);
-  fill: var(--accent-color);
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 .clients-svg-item {
+  fill: currentColor;
   width: 44px;
   height: 49px;
 }
