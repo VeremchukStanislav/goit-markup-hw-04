@@ -78,7 +78,7 @@ p {
   padding-left: 0px;
 }
 .navigation-contacts-list:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -110,6 +110,8 @@ p {
   color: var(--secondary-color-text);
 }
 .navigation-contacts-list-link {
+  display: flex;
+  align-items: center;
   color: var(--main-color-text);
 }
 .navigation-list-link:hover,
@@ -119,12 +121,39 @@ p {
   color: var(--accent-color);
 }
 
+.icon-phone:hover,
+.icon-phone:focus,
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: var(--accent-color);
+}
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+}
+.icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+  width: 16px;
+  height: 11px;
+}
+
 /*Hero Section*/
 
 .hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/main-page/hero/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: rgba(47, 48, 58, 0.8);
   text-align: center;
 }
 .hero-title {
@@ -165,7 +194,6 @@ p {
 
 .about-us {
   padding-top: 94px;
-  text-align: center;
 }
 
 .container {
@@ -207,6 +235,20 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
+}
+.box {
+  margin-bottom: 30px;
+  background-color: var(--background-secondary-color);
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  width: 270px;
+  height: 120px;
+}
+.icon-img {
+  height: 70px;
+  width: 70px;
 }
 
 /*what we do*/
