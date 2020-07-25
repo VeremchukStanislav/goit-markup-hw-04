@@ -8,6 +8,7 @@
   --background-color: #ffffff;
   --background-secondary-color: #f5f4fa;
   --background-footer-color: #2f303a;
+  --color-icons: #afb1b8;
 }
 body {
   background-color: var(--background-color);
@@ -343,6 +344,7 @@ p {
   padding-right: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
+  color: var(--color-icons);
 }
 .team-list-social-item-link:hover,
 .team-list-social-item-link:focus {
@@ -379,6 +381,7 @@ p {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  color: var(--color-icons);
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
@@ -386,10 +389,35 @@ p {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-svg-item {
+.clients-svg-item1 {
   fill: currentColor;
   width: 44px;
   height: 49px;
+}
+.clients-svg-item2 {
+  fill: currentColor;
+  width: 40px;
+  height: 52px;
+}
+.clients-svg-item3 {
+  fill: currentColor;
+  width: 41px;
+  height: 43px;
+}
+.clients-svg-item4 {
+  fill: currentColor;
+  width: 80px;
+  height: 42px;
+}
+.clients-svg-item5 {
+  fill: currentColor;
+  width: 59px;
+  height: 47px;
+}
+.clients-svg-item6 {
+  fill: currentColor;
+  width: 88px;
+  height: 45px;
 }
 
 /*Footer*/
@@ -433,7 +461,21 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 .join-in-item-link {
-  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.join-in-item-link:hover,
+.join-in-item-link:focus {
+  background-color: var(--accent-color);
+  color: var(--third-color-text);
+  border-radius: 50%;
 }
 .join-in {
   color: var(--background-color);
@@ -464,6 +506,14 @@ p {
 
 /*portfolio.html*/
 
+.header2 > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header2 {
+  border-bottom: 1px solid #ececec;
+}
 .main-container {
   padding-top: 93px;
   padding-bottom: 94px;
